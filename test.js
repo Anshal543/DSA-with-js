@@ -19,3 +19,9 @@ const test = new Set(edge)
 const test1 = new Set([edge])
 test1.add(edge1)
 console.log(test,test1);
+
+const r = 3
+const s = 4
+const post = r+','+s
+console.log(post);
+console.log(typeof post);
