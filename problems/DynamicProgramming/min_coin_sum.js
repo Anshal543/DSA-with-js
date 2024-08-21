@@ -5,11 +5,12 @@ function minCoin(coins, amount, memo = {}) {
     let minCoinCount = Infinity;
     for (let coin of coins) {
         let result = minCoin(coins, amount - coin, memo);
-        // console.log(result);
         if (result !== -1) {
+            console.log(result);
             minCoinCount = Math.min(minCoinCount, result + 1);
         }
     }
+
     memo[amount] = minCoinCount === Infinity ? -1 : minCoinCount;
     return memo[amount];
 }
