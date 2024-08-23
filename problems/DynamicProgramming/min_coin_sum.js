@@ -6,7 +6,7 @@ function minCoin(coins, amount, memo = {}) {
     for (let coin of coins) {
         let result = minCoin(coins, amount - coin, memo);
         if (result !== -1) {
-            console.log(result);
+            // console.log(result);
             minCoinCount = Math.min(minCoinCount, result + 1);
         }
     }
