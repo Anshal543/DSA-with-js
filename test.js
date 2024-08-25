@@ -25,3 +25,6 @@ const s = 4
 const post = r+','+s
 console.log(post);
 console.log(typeof post);
+
+const vowels = new Set(['a','e','i','o','u'])
+console.log(vowels);
